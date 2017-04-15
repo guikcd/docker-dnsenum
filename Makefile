@@ -1,5 +1,5 @@
 $(shell git clone https://github.com/fwaeytens/dnsenum)
-VERSION= $(shell grep "dnsenum.pl VERSION" dnsenum/dnsenum.pl | awk '{print $$NF}')
+VERSION=$(shell curl --silent https://api.github.com/repos/fwaeytens/dnsenum/releases/latest | jq --raw-output '.["tag_name"]')
 IMAGENAME=guidelacour/dnsenum
 
 build:
