@@ -8,4 +8,6 @@ RUN apt-get update && apt-get --yes --no-install-recommends install \
 RUN git clone https://github.com/fwaeytens/dnsenum.git /src/dnsenum/ \
     && chmod +x /src/dnsenum/dnsenum.pl
 
+WORKDIR /src/dnsenum
+
 CMD /src/dnsenum/dnsenum.pl
