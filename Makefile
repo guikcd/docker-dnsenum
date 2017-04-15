@@ -6,10 +6,11 @@ build:
 	@echo Building dnsenum $(VERSION) image...
 	docker build --tag $(IMAGENAME):$(VERSION) .
 	docker tag $(IMAGENAME):$(VERSION) $(IMAGENAME):latest
+	git tag $(VERSION) -s || true
 
 test:
 	docker run --tty --interactive --volume $(shell pwd)/Dockerfile:/Dockerfile replicated/dockerfilelint /Dockerfile
-	docker run --rm $(IMAGENAME):$(VERSION) | grep "VERSION:$(VERSION)"
+	docker run --rm $(IMAGENAME):$(VERSION) | grep "VERSION:"
 	echo "www" > dnslight.txt && docker run --rm --volume $(shell pwd)/dnslight.txt:/tmp/dnslight.txt $(IMAGENAME):$(VERSION) ./dnsenum.pl example.org --enum --file /tmp/dnslight.txt --noreverse
 
 push:
