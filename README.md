@@ -1,4 +1,4 @@
-![docker stars](https://img.shields.io/docker/stars/guidelacour/dnsenum.svg) ![docker pulls](https://img.shields.io/docker/pulls/guidelacour/dnsenum.svg) ![docker automated build](https://img.shields.io/docker/automated/guidelacour/dnsenum.svg) ![docker build status](https://img.shields.io/docker/build/guidelacour/dnsenum.svg)
+[![docker stars](https://img.shields.io/docker/stars/guidelacour/dnsenum.svg)](https://hub.docker.com/r/guidelacour/dnsenum/) [![docker pulls](https://img.shields.io/docker/pulls/guidelacour/dnsenum.svg)](https://hub.docker.com/r/guidelacour/dnsenum/) [![docker automated build](https://img.shields.io/docker/automated/guidelacour/dnsenum.svg)](https://hub.docker.com/r/guidelacour/dnsenum/) [![docker build status](https://img.shields.io/docker/build/guidelacour/dnsenum.svg)](https://hub.docker.com/r/guidelacour/dnsenum/)
 ![image size](https://img.shields.io/imagelayers/image-size/_/guidelacour/dnsenum.svg) ![image layers](https://img.shields.io/imagelayers/layers/guidelacour/dnsenum/latest.svg)
 
 # Source
