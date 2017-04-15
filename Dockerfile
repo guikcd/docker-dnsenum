@@ -1,6 +1,6 @@
 FROM perl:5
 
-RUN apt-get update && apt-get -y --no-install-recommends install \
+RUN apt-get update && apt-get --yes --no-install-recommends install \
     libnet-ip-perl libnet-netmask-perl libnet-dns-perl libxml-writer-perl libstring-random-perl \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
