@@ -1,3 +1,8 @@
+![docker stars](https://img.shields.io/docker/stars/guidelacour/dnsenum.svg) ![docker pulls](https://img.shields.io/docker/pulls/guidelacour/dnsenum.svg) ![docker automated build](https://img.shields.io/docker/automated/guidelacour/dnsenum.svg) ![docker build status](https://img.shields.io/docker/build/guidelacour/dnsenum.svg)
+![image size](https://img.shields.io/imagelayers/image-size/_/guidelacour/dnsenum.svg) ![image layers](https://img.shields.io/imagelayers/layers/guidelacour/dnsenum/latest.svg)
+
+# Source
+
 Script from https://github.com/fwaeytens/dnsenum
 
 # How to use
